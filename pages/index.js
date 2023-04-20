@@ -42,17 +42,21 @@ export async function getStaticProps() {
 export default function Home({ posts }) {
   return (
     <main>
-      <h1>Headless Blog</h1>
-      {posts.map((post) => (
-        <BlogCard
-          title={post.title}
-          author={post.author}
-          coverPhoto={post.coverPhoto}
-          key={post.id}
-          datePublished={post.datePublished}
-          slug={post.slug}
-        />
-      ))}
+      <h1 className="text-green-800 text-4xl flex justify-center py-6">
+        Headless Blog
+      </h1>
+      <div className="flex flex-col items-center py-10">
+        {posts.map((post) => (
+          <BlogCard
+            title={post.title}
+            author={post.author}
+            coverPhoto={post.coverPhoto}
+            key={post.id}
+            datePublished={post.datePublished}
+            slug={post.slug}
+          />
+        ))}
+      </div>
     </main>
   );
 }
