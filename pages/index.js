@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { GraphQLClient, gql } from "graphql-request";
 import BlogCard from "@/components/BlogCard";
+import NavBar from "@/components/navbar";
 
 const graphcms = new GraphQLClient(
   "https://api-eu-west-2.hygraph.com/v2/clgp7dx43075z01rrhdqcerg3/master"
@@ -42,9 +43,7 @@ export async function getStaticProps() {
 export default function Home({ posts }) {
   return (
     <main>
-      <h1 className="text-green-800 text-4xl flex justify-center py-6">
-        Headless Blog
-      </h1>
+      <NavBar />
       <div className="flex flex-col items-center gap-10 py-10">
         {posts.map((post) => (
           <BlogCard

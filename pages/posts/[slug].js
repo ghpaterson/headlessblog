@@ -1,4 +1,5 @@
 import { GraphQLClient, gql } from "graphql-request";
+import NavBar from "@/components/navbar";
 
 const graphcms = new GraphQLClient(
   "https://api-eu-west-2.hygraph.com/v2/clgp7dx43075z01rrhdqcerg3/master"
@@ -60,6 +61,7 @@ export async function getStaticProps({ params }) {
 export default function BlogPost({ post }) {
   return (
     <main>
+      <NavBar />
       <img src={post.coverPhoto.url} alt="" />
       <div>
         <img src={post.author.avatar.url} alt="" />
