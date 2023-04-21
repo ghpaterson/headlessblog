@@ -8,6 +8,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {},
+      fontFamily: {
+        lemurmure: ["Le Murmure", "sans-serif"],
+      },
     },
   },
   plugins: [],
