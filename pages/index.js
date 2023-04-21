@@ -45,7 +45,7 @@ export default function Home({ posts }) {
       <h1 className="text-green-800 text-4xl flex justify-center py-6">
         Headless Blog
       </h1>
-      <div className="flex flex-col items-center py-10">
+      <div className="flex flex-col items-center gap-10 py-10">
         {posts.map((post) => (
           <BlogCard
             title={post.title}

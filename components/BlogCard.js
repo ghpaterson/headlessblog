@@ -8,7 +8,7 @@ export default function BlogCard({
   slug,
 }) {
   return (
-    <div>
+    <div className="bg-gray-300 rounded-lg py-4 px-4">
       <div>
         <h2 className="text-2xl text-green-700 flex justify-center py-4">
           {title}
@@ -22,7 +22,13 @@ export default function BlogCard({
       <div>
         <div>
           <div className="flex gap-4 items-center py-6">
-            <img src={author.avatar.url} alt="" width={50} height={50} />
+            <img
+              className="rounded-full bg-white"
+              src={author.avatar.url}
+              alt=""
+              width={40}
+              height={40}
+            />
             <h3 className="text-xl">{author.name}</h3>
             <h3>{datePublished}</h3>
           </div>
