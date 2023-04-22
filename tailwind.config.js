@@ -11,6 +11,7 @@ module.exports = {
       fontFamily: {
         lemurmure: ["Le Murmure", "sans-serif"],
         pilowlava: ["pilowlava", "sans-serif"],
+        alternates: ["Montserrat Alternates", "san-serif"],
       },
       colors: {
         pistachio: "#9CD08F",

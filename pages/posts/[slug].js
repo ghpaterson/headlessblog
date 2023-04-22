@@ -63,12 +63,14 @@ export default function BlogPost({ post }) {
     <main>
       <NavBar />
       <div className="flex flex-col justify-center items-center py-4 mt-20 px-10 md:px-40">
-        <div className="text-2xl pb-10">{post.title}</div>
-        <div dangerouslySetInnerHTML={{ __html: post.content.html }}></div>
+        <div className=" font-alternates  text-2xl pb-10">{post.title}</div>
+        <div className="border border-solid border-black border-2 py-8 px-8">
+          <div dangerouslySetInnerHTML={{ __html: post.content.html }}></div>
+        </div>
       </div>
       <div className="flex gap-4 items-center my-4 px-10 md:px-40">
         <img src={post.author.avatar.url} alt="" width={50} height={40} />
-        <div className="flex gap-4">
+        <div className="font-alternates flex gap-4 my-10">
           <h6>By {post.author.name}</h6>
           <h6>{post.datePublished}</h6>
         </div>
