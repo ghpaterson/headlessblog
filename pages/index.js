@@ -44,11 +44,11 @@ export async function getStaticProps() {
 export default function Home({ posts }) {
   return (
     <main>
-      <section className="w-full h-[625px] bg-[url('https://images.pexels.com/photos/1231258/pexels-photo-1231258.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-cover ">
+      <section className="w-full h-[500px] md:h-[625px] bg-[url('https://images.pexels.com/photos/1231258/pexels-photo-1231258.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-cover ">
         <div className="mx-60 py-20">
           <Image src={headless} width={1000} />
           <div className=" flex justify-center py-60">
-            <Image src={myblog} width={500} />
+            <Image src={myblog} width={600} />
           </div>
         </div>
       </section>

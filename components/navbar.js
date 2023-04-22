@@ -1,21 +1,18 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
 import Image from "next/image";
 import underline from "../public/underline.svg";
 
 export default function NavBar() {
-  const router = useRouter();
-
   return (
-    <div className=" bg-transparent flex justify-between items-center py-10 mx-16">
+    <div className=" bg-transparent flex justify-between items-center py-10 mx-4 md:mx-16">
       <div className="flex items-center">
-        <h1 className=" font-pilowlava text-black text-3xl md:text-6xl">
+        <h1 className=" font-pilowlava text-black text-2xl md:text-6xl">
           HeadLess
         </h1>
       </div>
-      <div className="font-pilowlava  text-black text-3xl md:text-6xl">
+      <div className="font-pilowlava  text-black text-2xl md:text-6xl">
         <Link href="/">HOME</Link>
-        <Image src={underline} width={250} />
+        <Image src={underline} width={100} className="md:w-56 lg:w-56" />
       </div>
     </div>
   );
