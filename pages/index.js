@@ -2,6 +2,7 @@ import Image from "next/image";
 import { GraphQLClient, gql } from "graphql-request";
 import BlogCard from "@/components/BlogCard";
 import headless from "../public/headless.svg";
+import myblog from "../public/myblog.svg";
 
 const graphcms = new GraphQLClient(
   "https://api-eu-west-2.hygraph.com/v2/clgp7dx43075z01rrhdqcerg3/master"
@@ -46,6 +47,9 @@ export default function Home({ posts }) {
       <section className="w-full h-[625px] bg-[url('https://images.pexels.com/photos/1231258/pexels-photo-1231258.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-cover ">
         <div className="mx-60 py-20">
           <Image src={headless} width={1000} />
+          <div className=" flex justify-center py-60">
+            <Image src={myblog} width={500} />
+          </div>
         </div>
       </section>
       <div className="flex justify-center py-6">
