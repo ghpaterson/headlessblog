@@ -10,6 +10,10 @@ module.exports = {
       backgroundImage: {},
       fontFamily: {
         lemurmure: ["Le Murmure", "sans-serif"],
+        pilowlava: ["pilowlava", "sans-serif"],
+      },
+      colors: {
+        pistachio: "#9CD08F",
       },
     },
   },

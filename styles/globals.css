@@ -7,6 +7,11 @@
   src: url("/fonts/Le_Murmure-Regular_web.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "pilowlava";
+  src: url("/fonts/Pilowlava-Regular.otf") format("opentype");
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -22,5 +27,5 @@
 }
 
 body {
- background-color: white;
+ background-color: #F0E9E5;
 }

@@ -7,15 +7,13 @@ export default function NavBar() {
   return (
     <div className=" bg-transparent flex justify-between items-center py-4 mx-10">
       <div className="flex items-center">
-        <h1 className=" font-lemurmure text-black text-3xl md:text-6xl">
+        <h1 className=" font-pilowlava text-black text-3xl md:text-6xl">
           HeadLess
         </h1>
       </div>
-      {router.pathname === "/" ? null : (
-        <div className="py-2 px-4  text-black text-xl">
-          <Link href="/">HOME</Link>
-        </div>
-      )}
+      <div className="font-pilowlava  text-black text-3xl md:text-6xl">
+        <Link href="/">HOME</Link>
+      </div>
     </div>
   );
 }
