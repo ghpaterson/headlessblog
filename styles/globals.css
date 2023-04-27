@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -29,5 +30,5 @@
 }
 
 body {
- background-color: #F0E9E5;
+ background-color: #F5F5F5;
 }

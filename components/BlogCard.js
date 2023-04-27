@@ -8,9 +8,9 @@ export default function BlogCard({
   slug,
 }) {
   return (
-    <div className="bg-transparent border border-solid border-black border-2 shadow-lg py-2 px-4">
+    <div className="bg-transparent  shadow-sm py-2 px-4">
       <div>
-        <h2 className=" font-alternates text-xl text-black flex justify-center py-4">
+        <h2 className=" font-lato text-xl text-gray-800 flex justify-center py-4">
           {title}
         </h2>
       </div>
@@ -30,13 +30,11 @@ export default function BlogCard({
                 width={40}
                 height={40}
               />
-              <h3 className=" font-alternates text-lg text-black">
+              <h3 className=" font-lato text-lg text-gray-800">
                 {author.name}
               </h3>
             </div>
-            <h3 className="font-alternates text-gray-700 text-sm">
-              {datePublished}
-            </h3>
+            <h3 className="font-lato text-gray-500 text-sm">{datePublished}</h3>
           </div>
         </div>
       </div>
