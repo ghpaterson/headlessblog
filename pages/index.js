@@ -49,10 +49,9 @@ export default function Home({ posts }) {
       <section className="w-full h-[500px] md:h-[600px] bg-[url('https://images.pexels.com/photos/1231258/pexels-photo-1231258.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-cover ">
         <div className="mx-60 py-20">
           <Image src={headless} width={1000} />
-          <div className=" flex py-40 -ml-24 gap-10">
+          <div className=" flex py-32 -ml-24 gap-10">
             <Image src={herotext1} width={800} />
             <div className="flex gap-10">
-              <Image className="" src={rectangle} height={300} />
               <Image className="pb-20" src={smile} width={200} />
             </div>
           </div>
